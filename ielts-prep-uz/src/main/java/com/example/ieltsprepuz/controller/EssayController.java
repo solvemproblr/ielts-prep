@@ -1,10 +1,11 @@
-package com.example.ieltsprepuz;
+package com.example.ieltsprepuz.controller;
 
 import com.example.ieltsprepuz.model.EssayDTO;
 import com.example.ieltsprepuz.service.EssayService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api/essay")
 public class EssayController {
 
     private final EssayService essayService;
