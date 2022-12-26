@@ -23,8 +23,8 @@ public class SpeakingServiceImpl implements SpeakingService {
     }
 
     @Override
-    public void delete(SpeakingDTO speakingDTO) {
-        speakingRepository.delete(fromDTO(speakingDTO));
+    public void delete(Long id) {
+        speakingRepository.deleteById(id);
     }
 
     @Override
