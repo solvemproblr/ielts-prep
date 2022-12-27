@@ -25,7 +25,7 @@ public class SpeakingController {
     }
 
     @DeleteMapping("/delete")
-    public void delete(SpeakingDTO speakingDTO) {
+    public void delete(Long speakingDTO) {
         speakingService.delete(speakingDTO);
     }
 }
