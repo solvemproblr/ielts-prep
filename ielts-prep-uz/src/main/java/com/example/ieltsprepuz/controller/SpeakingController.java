@@ -14,18 +14,18 @@ public class SpeakingController {
         this.speakingService = speakingService;
     }
 
-    @GetMapping("{/id}")
+    @GetMapping("/{id}")
     public SpeakingDTO getById(@PathVariable Long id) {
         return speakingService.get(id);
     }
 
-    @PostMapping("{/create}")
-    public SpeakingDTO create(SpeakingDTO speakingDTO) {
+    @PostMapping("/create")
+    public SpeakingDTO create(@RequestBody SpeakingDTO speakingDTO) {
         return speakingService.create(speakingDTO);
     }
 
-    @DeleteMapping("/delete")
-    public void delete(Long speakingDTO) {
-        speakingService.delete(speakingDTO);
+    @DeleteMapping("/delete/{id}")
+    public void delete(@PathVariable Long id) {
+        speakingService.delete(id);
     }
 }
