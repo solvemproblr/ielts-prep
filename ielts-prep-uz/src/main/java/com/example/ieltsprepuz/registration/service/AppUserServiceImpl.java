@@ -35,7 +35,10 @@ public class AppUserServiceImpl implements AppUserService {
         boolean isUserExists = appUserRepository.findByEmail(appUser.getEmail()).isPresent();
 
         if (isUserExists) {
-            throw RegistrationException.emailExists(appUser.getEmail());
+            AppUser user = appUserRepository.findByEmail(appUser.getEmail()).get();
+            if(user.getEnabled()) {
+                throw RegistrationException.emailExists(appUser.getEmail());
+            }
         }
 
         String encodedPassword = bCryptPasswordEncoder.encode(appUser.getPassword());
