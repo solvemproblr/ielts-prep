@@ -1,9 +1,14 @@
 package com.example.ieltsprepuz.ielts.entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
-@Table(name = "essay")
+@Getter
+@Setter
+@NoArgsConstructor
 public class Essay {
 
     @Id
@@ -22,58 +27,6 @@ public class Essay {
         this.description = description;
         this.wordLimit = wordLimit;
         this.duration = duration;
-        this.essay = essay;
-    }
-
-    public Essay() {
-
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public int getWordLimit() {
-        return wordLimit;
-    }
-
-    public void setWordLimit(int wordLimit) {
-        this.wordLimit = wordLimit;
-    }
-
-    public int getDuration() {
-        return duration;
-    }
-
-    public void setDuration(int duration) {
-        this.duration = duration;
-    }
-
-    public String getEssay() {
-        return essay;
-    }
-
-    public void setEssay(String essay) {
         this.essay = essay;
     }
 }
