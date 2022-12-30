@@ -1,4 +1,6 @@
-package com.example.ieltsprepuz.registration.token;
+package com.example.ieltsprepuz.registration.service;
+
+import com.example.ieltsprepuz.registration.entity.ConfirmationToken;
 
 import java.util.Optional;
 

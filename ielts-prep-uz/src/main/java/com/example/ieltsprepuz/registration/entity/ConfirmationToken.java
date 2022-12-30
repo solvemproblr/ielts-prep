@@ -1,4 +1,4 @@
-package com.example.ieltsprepuz.registration.token;
+package com.example.ieltsprepuz.registration.entity;
 
 import com.example.ieltsprepuz.registration.entity.AppUser;
 import jakarta.persistence.*;

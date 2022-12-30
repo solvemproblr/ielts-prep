@@ -1,5 +1,7 @@
-package com.example.ieltsprepuz.registration.token;
+package com.example.ieltsprepuz.registration.service;
 
+import com.example.ieltsprepuz.registration.entity.ConfirmationToken;
+import com.example.ieltsprepuz.registration.repository.ConfirmationTokenRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

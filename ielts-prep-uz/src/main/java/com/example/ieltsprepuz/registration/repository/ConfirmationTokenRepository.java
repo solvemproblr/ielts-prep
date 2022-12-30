@@ -1,5 +1,6 @@
-package com.example.ieltsprepuz.registration.token;
+package com.example.ieltsprepuz.registration.repository;
 
+import com.example.ieltsprepuz.registration.entity.ConfirmationToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

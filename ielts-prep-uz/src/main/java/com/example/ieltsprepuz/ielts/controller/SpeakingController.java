@@ -5,7 +5,7 @@ import com.example.ieltsprepuz.ielts.service.SpeakingService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/speaking")
+@RequestMapping("/api/v1/speaking")
 public class SpeakingController {
 
     private final SpeakingService speakingService;
@@ -14,7 +14,7 @@ public class SpeakingController {
         this.speakingService = speakingService;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("{id}")
     public SpeakingDTO getById(@PathVariable Long id) {
         return speakingService.get(id);
     }
@@ -24,7 +24,7 @@ public class SpeakingController {
         return speakingService.create(speakingDTO);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/delete{id}")
     public void delete(@PathVariable Long id) {
         speakingService.delete(id);
     }

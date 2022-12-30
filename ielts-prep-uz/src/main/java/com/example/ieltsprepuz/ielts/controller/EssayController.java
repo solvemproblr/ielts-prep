@@ -5,7 +5,7 @@ import com.example.ieltsprepuz.ielts.service.EssayService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/essay")
+@RequestMapping("/api/v1/essay")
 public class EssayController {
 
     private final EssayService essayService;
@@ -14,7 +14,7 @@ public class EssayController {
         this.essayService = essayService;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("{id}")
     public EssayDTO getById(@PathVariable Long id)
     {
         return essayService.get(id);

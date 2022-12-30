@@ -13,6 +13,6 @@ public class EssayConverter {
 
     public static EssayDTO toDTO(Essay essay)
     {
-        return new EssayDTO(essay.getTitle(), essay.getDescription(), essay.getWordLimit(), essay.getDuration(), essay.getEssay());
+        return new EssayDTO(essay.getId(), essay.getTitle(), essay.getDescription(), essay.getWordLimit(), essay.getDuration(), essay.getEssay());
     }
 }

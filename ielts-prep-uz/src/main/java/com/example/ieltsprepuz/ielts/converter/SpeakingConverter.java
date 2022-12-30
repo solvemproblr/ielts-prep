@@ -6,7 +6,7 @@ import com.example.ieltsprepuz.ielts.model.SpeakingDTO;
 public class SpeakingConverter {
 
     public static SpeakingDTO toDTO(Speaking speaking) {
-        return new SpeakingDTO(speaking.getQuestion(), speaking.getTime());
+        return new SpeakingDTO(speaking.getId(), speaking.getQuestion(), speaking.getTime());
     }
 
     public static Speaking fromDTO(SpeakingDTO speakingDTO) {
