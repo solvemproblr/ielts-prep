@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ielts-prep.iml" filepath="$PROJECT_DIR$/.idea/ielts-prep.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ielts-prep-uz/ielts-prep-uz.iml" filepath="$PROJECT_DIR$/ielts-prep-uz/ielts-prep-uz.iml" />
-    </modules>
-  </component>
-</project>
